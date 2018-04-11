@@ -1,3 +1,9 @@
+/*
+ * @author: Guilherme Ruschel Kelling 
+ * Variables, Datatypes and Operators 
+ * 
+ */
+
 import sun.management.counter.Variability;
 
 public class MainVariablesDatatypesOperators {
