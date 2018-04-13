@@ -1,10 +1,11 @@
+package Section4Section5;
 /*
  * @author: Guilherme Ruschel Kelling 
  * Expressions, Statements, Code blocks, Methods and more 
  * 
  */
 
-public class MainExpressionsStatementsCodeBlocksMethods {
+public class Section5_MainExpressionsStatementsCodeBlocksMethods {
 	
 	public static void main(String[] args) {
 		

@@ -1,3 +1,4 @@
+package Section4Section5;
 /*
  * @author: Guilherme Ruschel Kelling 
  * Variables, Datatypes and Operators 
@@ -6,7 +7,7 @@
 
 import sun.management.counter.Variability;
 
-public class MainVariablesDatatypesOperators {
+public class Section4_MainVariablesDatatypesOperators {
 	public static void main(String[] args) {
         System.out.println("Hello Tim!");
 
