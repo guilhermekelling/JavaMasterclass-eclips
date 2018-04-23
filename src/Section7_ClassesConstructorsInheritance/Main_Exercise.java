@@ -6,6 +6,8 @@
 
 package Section7_ClassesConstructorsInheritance;
 
+import sun.rmi.runtime.NewThreadAction;
+
 public class Main_Exercise {
     // Create a new class for a bank account
     // Create fields for the account number, balance, customer name, email and phone number.
@@ -39,6 +41,30 @@ public class Main_Exercise {
 		
 		bobsAccount.deposit(51.0);
 		bobsAccount.withdrawal(100.0);
+		
+		Account timsAccount = new Account("Tim", "tim@email.com","12345");
+		System.out.println(timsAccount.getNumber() + " name " + timsAccount.getCustomerName());
+		System.out.println("Current balance is " + timsAccount.getBalance());
+		timsAccount.withdrawal(100.55);
+		
+		//Create a new class VipCustomer
+		//it should have 3 fields name, credit limit, and email address.
+		//create 3 constructors 
+		//1st constructor empty should call the constructor with 3 parameters with default values
+		//2nd constructor should pass on the 2 values it receives and add a default value for the 3rd
+		//3rd constructor should sabe all fields
+		//create getters only for this using code generation of intellij as setters wont be needed
+		// test and confirm it works
+		
+		VipCustomer person1 = new VipCustomer();
+		System.out.println(person1.getName());
+		
+		VipCustomer person2 = new VipCustomer("Bob", 25000.000);
+		System.out.println(person2.getName());
+		
+		VipCustomer person3 = new VipCustomer("Tim", 100.000, "tim@email.com");
+		System.out.println(person3.getName());
+		System.out.println(person3.getEmailAddress());
 	}
 	
 	
