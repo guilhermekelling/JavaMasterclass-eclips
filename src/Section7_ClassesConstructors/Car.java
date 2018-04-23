@@ -4,7 +4,7 @@
  * 
  */
 
-package Section7_ClassesConstructorsInheritance;
+package Section7_ClassesConstructors;
 
 public class Car {
 	private int doors;
