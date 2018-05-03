@@ -16,18 +16,16 @@ public class PC {
 		this.monitor = monitor;
 		this.motherboard = motherboard;
 	}
-
-	public Case getTheCase() {
-		return theCase;
+	
+	public void powerUp() {
+		theCase.pressPowerButton();
+		drawLogo();
 	}
 
-	public Monitor getMonitor() {
-		return monitor;
+	private void drawLogo() {
+		// Fancy graphics
+		monitor.drawPixelAt(1200, 50, "yellow");
 	}
-
-	public Motherboard getMotherboard() {
-		return motherboard;
-	}	
 
 }
 
