@@ -4,7 +4,7 @@
  * 
  */
 
-package Section8_CompositionEncapsulationPolymorphism;
+package Section8_Composition;
 
 public class Case {
 	private String model;
