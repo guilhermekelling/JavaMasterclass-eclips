@@ -6,7 +6,10 @@
 
 package Section9_List_ArraysList;
 
+import java.util.ArrayList;
 import java.util.Scanner;
+
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
 
 
 
@@ -43,6 +46,9 @@ public class Main {
 				searchForItem();
 				break;
 			case 6:
+				processArrayList();
+				break;
+			case 7:
 				quit = true;
 				break;
 			}
@@ -59,7 +65,8 @@ public class Main {
 		System.out.println("\t 3 - To modify an item in the list.");
 		System.out.println("\t 4 - To remove an item from the list.");
 		System.out.println("\t 5 - To search for an item in the list.");
-		System.out.println("\t 6 - To quit the application.");
+		System.out.println("\t 6 - To process ArrayList.");
+		System.out.println("\t 7 - To quit the application.");
 	}
 	
 	public static void addItem() {
@@ -89,6 +96,16 @@ public class Main {
 		} else {
 			System.out.println(searchItem + " not on file.");
 		}
+	}
+	
+	public static void processArrayList() {
+		ArrayList<String> newArray = new ArrayList<String>();
+		newArray.addAll(groceryList.getGroceryList());
+		
+		ArrayList<String> nextArray = new ArrayList<String>(groceryList.getGroceryList());
+		
+		String[] myArray = new String[groceryList.getGroceryList().size()];
+		myArray = groceryList.getGroceryList().toArray(myArray);
 	}
 
 }
